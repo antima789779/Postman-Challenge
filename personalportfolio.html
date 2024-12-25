@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+        .container{
+        }
+        .container1{
+            border:0px solid black;
+        }
+        .header1{
+            display:flex;
+            justify-content: space-evenly;
+        }
+        .navlist{
+            display:flex;
+            gap:1.8rem;
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin:1.4rem;
+        }
+        .navlist a{
+            text-decoration: none;
+            color:#333333;
+        }
+        .body1{
+            display: flex;
+            box-sizing:border-box;
+            justify-content:space-evenly;
+            padding:1.7rem;
+
+        }
+        .body1-text{
+        }
+        .body1-heading{
+            font-size:2.3rem;
+            font-weight: bold;
+            margin:2rem;
+            padding-left:1.5rem ;
+        }
+        .body1-desc{
+            font-size:1.3rem;
+            font-weight:500;
+            line-height:2rem; 
+            padding-right:3.2rem;
+            padding-left:2.1rem ;
+
+        }
+        .body1-button{
+           display:flex; 
+           gap:2.1rem;
+           margin:35px ;
+        }
+        .body1-button1{
+           width:180px;
+            height:40px;
+            border:1px solid black;
+            border-radius:8px;
+            background-color: aqua;
+           font-size:1rem ;
+           font-weight: 600;
+           text-align:center ;
+           padding-top:.6rem;
+        }
+        .body1-logo{
+            gap:2.2rem;
+            margin:2.3rem;
+        }
+        .container2{
+        }
+        .body2{
+            display:flex;
+            justify-content:space-evenly ;
+            margin:3rem;
+            gap:1.6rem;
+        }
+        .body2-text-heading{
+            font-size:2.3rem;
+            font-weight:bold;
+            margin:1.4rem;
+        }
+        .body2-text-desc{
+            font-size:1.3rem ;
+            font-weight:600;
+            color:#333333 ;
+        }
+        .body2-text-desc2{
+            font-size:1.3rem;
+            font-weight:600;
+            line-height:1.9rem ;
+        }
+        .crazy{
+            font-size:1.02rem;
+            font-weight:600;
+        }
+        .body2-text-desc-logo{
+            display:flex;
+            gap:3rem;
+            margin:2.2rem;
+        }
+        .body2-img{   
+        }
+        .container3{
+            border:0px solid black;   
+        }
+        .body3{
+            display:flex;
+            justify-content:space-evenly ;
+            padding:1.7rem;
+            box-sizing:border-box;
+        }
+        .body3-button{
+            width:600px;
+            height:6px;
+            border-radius:4px ;
+            background-color: blueviolet;
+        }
+        .body3-heading{
+            font-size:2.1rem;
+            font-weight: bold;
+            margin:1.4rem;
+        }
+        .container4{
+            border:0px solid black;
+            /*background-color: blueviolet;*/
+            width:100vw;
+            height:125vh;
+        }
+        .body4{
+            padding:2rem;
+        }
+        .body4-Grid{
+           
+           /* grid-template-rows:repeat(3,1fr) ;
+            grid-template-columns:repeat(2,1fr) ;*/
+
+            display: grid;
+            grid-template-rows:repeat(3,200px) ;
+            grid-template-columns:repeat(2,500px);
+            row-gap:2.6rem ;
+            column-gap:5rem;
+            justify-content: center; 
+        }
+        .item1{
+            border:1px solid black;
+            background-color:whitesmoke ;
+            padding:1.8rem;
+            border-radius:25px;   
+        }
+        .item1-hd{
+            margin:1.3rem;
+            font-size:1.8rem ;
+            font-weight: 700;
+        }
+        .item1-subhd{
+            font-size:1.4rem;
+            font-weight: 600;
+        }
+        .body4-heading{
+            font-size:2.5rem ;
+            margin-bottom:1.1rem ;  
+        }
+        .body4-button{
+            width:176px;
+            height:42px;
+            font-size:1.3rem;
+            border-radius:12px ;
+            margin-left:680px ;
+            color:whitesmoke ;
+            background-color: blueviolet;
+            border:1px solid black;
+        }
+        .body5{
+            padding:4rem; 
+        }
+        .body5-big{
+            font-size:2.1rem;
+            color:#333333 ;
+            font-weight:lighter;
+            margin:1.5rem;
+        }
+        .body5-company-name{
+            font-size:3rem;
+            font-weight: bold;
+            display:flex;
+            gap:7rem;
+            margin:4rem;
+        }
+        .body5-subhd{
+            color: #333333;
+            font-size:.8rem ;
+            font-weight: 400;
+        }
+        .container6{
+            border:0px solid black;
+            width:100vw;
+            height:90vh;
+        }
+        .body6{
+        }
+        .body6-grid{
+           display:grid;
+           grid-template-rows:repeat(1,480px) ;
+           grid-template-columns:repeat(3,370px) ;
+           row-gap:1.7rem;
+           column-gap:2.3rem;
+           justify-content: center;  
+        }
+        .body6-card1{
+            border:1px solid black;
+            background-color: white;
+            margin:1.6rem;
+            border-radius:24px ;
+            box-shadow:2px 0px 2px rgb(83, 82, 82),-2px 0px 2px rgb(83, 82, 82);  
+        }
+        .body6-card1-heading1{
+            font-size:2rem;
+            font-weight: bold;
+            color:#333333;
+            margin:1.5rem;
+            text-align: center;
+        }
+        .body6-card1-heading2{
+            font-size:1.4rem;
+            font-weight: 600;
+            color:#333333;
+            margin:1.3rem;
+            text-align: center;
+        }
+        .body6-heading{
+            font-size:2.4em ;
+            font-weight: bold;
+            color: #333333;
+        }
+        .body6-card1-img{
+            display: flex;
+            justify-content:center ;
+            margin:40px ;
+            border-radius:15px;
+        }
+        .container7{
+        }
+        .body7{
+
+        }
+        .body7-grid{
+            display:grid;
+            grid-template-columns:repeat(2,600px) ;
+            grid-template-rows:repeat(1,200px);
+            row-gap:2rem;
+            column-gap: 3rem; 
+            padding:2.1rem ;
+        }
+        .body7-card1{
+            border:1px solid black;
+            background-color:white ;
+            padding:1.3rem;
+            border-radius:12px ;
+            box-shadow:4px -4px 3px rgb(218, 216, 216);
+
+        }
+        .body7-card1-heading{
+            font-size:2rem;
+            font-size:bold;
+        }
+        .body7-card1-subheading{
+            font-size:1.2rem;
+            font-weight:400;
+            color:#333333 ;
+        }
+        .body7-heading2{
+            font-size:3rem; 
+        }
+        .body7-heading3{
+            font-size:1rem ;
+            color:#333333 ;
+        }
+        .body7-button{
+            width:350px;
+            height:60px;
+            border:1px solid blueviolet;
+            font-size:2rem;
+           background-color: blueviolet;
+           color: whitesmoke;
+           font-weight:600; ;
+           margin-left:400px ;
+           text-align: center;
+           border-radius:10px;
+           margin-bottom:1rem;
+           margin-top:2rem ;
+        }
+        .body7-subheading1{
+            font-size:2.1rem;
+            margin-bottom: 1.7rem;
+        }
+        .body7-subheading2{
+            font-size:1.6rem;
+            color: #333333;
+        }
+        .body7-heading{
+           margin:1.3rem; 
+        }
+        .container8{
+        }
+        .body8{
+            display:flex; 
+
+        }
+        .body8-heading{
+            font-size:1.8rem;
+        }
+        .body8-heading a{
+            font-size:1.2rem;
+        }
+        .body8-main-heading{
+            font-size:1.8rem;
+        }
+        .body8-button{
+            width:1200px;
+            height:46px;
+            margin-left:180px;
+            margin:2.4rem;
+            background-color: rgb(205, 205, 215) ;
+        }
+        .body8-heading2-img{
+            display:flex;
+        }
+       /* .body8-right-button{
+            height:600px;
+            width:4px;
+            border:1px solid black;*/
+       .body9-button{
+        width:400px;
+        height:70px;
+        border:1px solid whitesmoke;
+        display:flex;
+        box-shadow:inset 3px -3px 3px blueviolet ;
+        border-radius:5px ;
+       }
+       .button9-right-side{
+        font-size:1.6rem;
+        text-align: center;
+       }
+       .body9-heading{
+        font-size:2rem;
+        font-weight:bold ;
+        margin:1.5rem ;
+        color:#333333;
+       }
+       .body9-sub-heading{
+        font-size:1.3rem;
+        font-weight:400 ;
+        margin:1.5rem ;
+        color:#333333;
+}
+.container10{
+}
+.body10{
+    display:flex;
+    justify-content:center;
+    padding:4rem;
+}
+.body10-heading1{
+    font-size:2rem ;
+    font-weight: bold;
+    color: #333333;
+    margin:1.2rem;
+}
+.body10-heading2{
+    font-size:1.1rem;
+    font-weight: 400;
+    color: #333333;
+    margin:.9rem;
+}
+.body10-heading3{
+    font-size:1.6rem ;
+    font-weight: bold;
+    color: #333333;
+    margin:1rem;
+}
+.body10-heading4{
+    font-size:1.2rem;
+    font-weight:400 ;
+    color: #333333;
+    margin:.9rem;
+}
+.body10-heading5{
+    font-size:1rem;
+    font-weight:400 ;
+    color: #333333;
+    margin:.9rem;    
+}
+
+.body10-heading{
+    font-size:1.5rem;
+    font-weight:400 ;
+    color: #333333;
+    margin:.9rem;
+}
+.body10-logo{
+    display: flex;
+    gap:1rem;
+    margin:1.1rem;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container1">
+            <div class="header1">
+                <div class="logo1">
+                    <img src="https://signature.freefire-name.com/img.php?f=11&t=Antima" width="70px" height="70px"/>
+                </div>
+                <div class="navlist">
+                    <a href="#">Skills</a>
+                    <a href="#">Open Source</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Achievements</a>
+                    <a href="#">Blogs</a>
+                    <a href="#">Talks</a>
+                    <a href="#">Contact Me</a>
+                </div>
+            </div>
+            <div class="body1">
+                <div class="body1-text">
+                <div class="body1-heading">Hi all I'm Antima</div>
+                <div class="body1-desc">
+                    A passionate Full Stack Software Developer  having an experience of building Web and Mobile applictions with Javascript
+                    /Reactjs/Nodejs/React Native and some other cool libraries and frameworks.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur minus earum impedit esse doloremque accusamus
+                     adipisci ipsum, provident repellat! Debitis facere facilis a ab tempora magni,
+                      optio ex soluta dolores?
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur minus earum impedit esse doloremque accusamus
+                      adipisci ipsum, provident repellat! Debitis facere facilis a ab tempora magni,
+                       optio ex soluta dolores?
+                </div>
+                <div class="body1-logo">
+                    <img class="body1-logo1" src="https://banner2.cleanpng.com/20180824/jtl/kisspng-computer-icons-logo-portable-network-graphics-clip-icons-for-free-iconza-circle-social-5b7fe46b0bac53.1999041115351082030478.jpg" width="60px" height="60px"/>
+                    <img class="body1-logo1"src="https://th.bing.com/th/id/OIP.QAxeJ33Fyfd28DXfzIQ95QHaHa?rs=1&pid=ImgDetMain"width="60px" height="60px" />
+                    <img class="body1-logo1"src="https://pnghq.com/wp-content/uploads/pnghq.com-google-logo-png-hd-quality-1536x1472.png"width="60px" height="60px"/>
+                    <img class="body1-logo1" src="https://cdn4.vectorstock.com/i/1000x1000/08/08/instagram-logo-social-media-sign-icon-vector-46040808.jpg"width="60px" height="60px"/>
+                    <img class="body1-logo1"src="https://icon-library.com/images/facebook-icon-flat/facebook-icon-flat-20.jpg"width="60px" height="60px"/>
+                </div>
+                <div class="body1-button">
+                    <div class="body1-button1">CONTACT ME</div>
+                    <div class="body1-button1">SEE MY RESUME</div>
+                </div>
+            </div>
+            <div class="body1-img">
+                <img
+                src="https://images.squarespace-cdn.com/content/v1/60da92ade3a0605a368f659e/baeb5066-7eb6-4a1e-bea0-275892d7acdb/iStock-1257836726.jpg?format=1500w" width="250px" height="250px"/>
+            </div>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="body2">
+                <div class="body2-img">
+                    <img src="https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/Vd3bj2jPe/videoblocks-smiling-businessman-working-on-laptop-computer-at-home-office-male-professional-typing-on-laptop-keyboard-at-office-workplace-portrait-of-positive-business-man-looking-at-laptop-screen-indoors_bfhjr_5md_thumbnail-1080_01.png" width="300px" height="300px"/>
+                </div>
+                <div class="body2-text">
+                    <div class="body2-text-heading">What i do</div>
+                    <div class="body2-text-desc">
+                        <span class="crazy">CRAZY FULL STACK DEVELOPER WHO WANT TO EXPLORER EVERY TECH STACK</span>
+                        <div class="body2-text-desc-logo">
+                            <img src="https://image.pngaaa.com/109/4579109-middle.png" width="60px" height="60px"/>
+                            <img src="https://img.favpng.com/11/20/12/java-computer-icons-scalable-vector-graphics-clip-art-computer-software-png-favpng-dWfciFmbBjpPYrekHFknHHaR1.jpg"width="60px" height="60px"/>
+                            <img src="https://www.pngfind.com/pngs/m/638-6386413_react-logo-png-white-transparent-png.png"width="60px" height="60px"/>
+                            <img src="https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2021/12/931/523/Amazon-AWS.png?ve=1&tl=1"width="60px" height="60px"/>
+                            <img src="https://img.favpng.com/19/6/4/c-black-book-computer-icons-symbol-logo-png-favpng-BCn7LKKzg0AvE5YYgfTwVidvy.jpg"width="60px" height="60px"/>
+                            <img src="https://seekicon.com/free-icon-download/node_1.png"width="60px" height="60px"/>
+                        </div>
+                        <div class="body2-text-desc2">
+                            <ul>
+                                <li>Develop highly interactive Front end /User interactive for your web and mobile applications.</li>
+                                <li>Progressive Web Aplication(PWA)in normal and SPA stacks</li>
+                                <li>Integration of third party services such as Hirebase /AWS /Digital Ocean</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container3">
+            <div class="body3">
+              
+                <div class="body3-suheading">
+                    <div class="body3-heading">Proficiency</div>
+                <div class="body3-subheading1">
+                    <h2>Frontend/design</h2>
+                    <button class="body3-button"></button>
+
+                </div>
+                <div class="body3-subheading2">
+                    <h2>Backend</h2>
+                    <button class="body3-button"></button>
+                </div>
+                <div class="body3-subheading3">
+                    <h2>Programming</h2>
+                    <button class="body3-button"></button>
+
+                </div>
+            </div>
+            <div class="body3-img">
+                <img src="https://www.anlx.net/wp-content/uploads/2020/08/14550-scaled.jpg" width="300px" height="300px"/>
+            </div>
+            </div>
+        </div>
+        <div class="container4">
+            <div class="body4">
+                <div class="body4-heading">Open Source Projects</div>
+                <div class="body4-Grid">
+                  
+                        <div class="item1" id="item1">
+                            <div class="item1-hd">C react-blog-github</div>
+                        <div class="item1-subhd">React+Github Issues+your Personal Blog</div>
+                    </div>
+                        <div class="item1"id="item2">
+                            <div class="item1-hd">Developer portfolio</div>
+                        <div class="item1-subhd">Software Developer:Portfolio Template that help you showcase.
+                            your work and skills 
+                        </div></div>
+                        <div class="item1"id="item2">
+                            <div class="item1-hd">C PWA -OLX -app</div>
+                        <div class="item1-subhd">Olx Progressive Web App with Offline feature,Messaging </div></div>
+                        <div class="item1"id="item3">
+                            <div class="item1-hd">awesome-web-component</div>
+                            <div class="item1-subhd">Awesome web component and snippets for every Front-end Developer</div>
+                        </div>
+                        <div class="item1"id="item4"><div class="item1-hd">Grocery-Items-Detection</div>
+                        <div class="item1-subhd">Grocery items Detection using Tensorflow js and IBM Watson</div></div>
+                        <div class="item1"id="item5"><div class="item1-hd">Locate-me</div>
+                        <div class="item1-subhd">A React Native live location appliction to find your loved one's  </div></div> 
+                </div>
+            </div>
+            <button class="body4-button">More Project</button>
+        </div>
+        <div class="container5">
+            <div class="body5">
+                <div class="body5-text">
+                <div class="body5-big">Big Projects</div>
+                <div class="body5-subhd">
+                    SOME STARTUP AND COMPANIES THAT I HELP TO CREATE THEIR TECH
+                </div>
+            </div>
+            <div class="body5-company-name">
+                <div class="body5-company-name1">
+                    <img src="https://th.bing.com/th/id/OIP.LV6YzQJo_puQlwCZHGUEVQHaEm?rs=1&pid=ImgDetMain" width="90px " height="90px"/>
+                </div>
+                <div class="body5-company-name2">next u</div>
+
+            </div>      
+            </div>
+        </div>
+        <div class="container6">
+            <div class="body6">
+                <div class="body6-heading">Achievements and certifications</div>
+                <div class="body6-grid">
+                   <div class="body6-card1">
+                    <img class="body6-card1-img" src="https://betanews.com/wp-content/uploads/2016/11/GoogleCodeIn-600x600.png" width="190px" height="160px"/>
+                    <div class="body6-card1-heading1">Google code-in finalist</div>
+                    <div class="body6-card1-heading2">First Pakistani to be selectd as a Google Code-In-Finalist</div>
+                   </div>
+                   <div class="body6-card1">
+                    <img class="body6-card1-img" src="https://cdn.wccftech.com/wp-content/uploads/2019/07/Google-assistant.jpg"width="190px" height="160px"/>
+                    <div class="body6-card1-heading1">Google Assistant Action</div>
+                    <div class="body6-card1-heading2">Developers a Google Assistant Action Javascript </div>
+                </div>
+                <div class="body6-card1">
+                    <img class="body6-card1-img" src="https://miro.medium.com/max/1024/1*UWpmhI3AEdFY7gjHIZH-2w.png"width="190px" height="160px"/>
+                    <div class="body6-card1-heading1">PWA Web Developer </div>
+                    <div class="body6-card1-heading2">Completed certification SMIT for PWA Web APP!</div>
+                </div>                     
+                </div>
+            </div>
+        </div>
+        <div class="container7">
+            <div class="body7">
+                <div class="body7-heading">
+                <div class="body7-subheading1">Blogs</div>
+                <div class="body7-subheading2">
+                    WITH LOVE FOR DEVELOPING COOL STUFF,I LOVE TO WRITE AND TEACH OTHERS WHAT I HAVE LEARNED
+                </div>
+
+            </div>
+            <div class="body7-grid">
+                <div class="body7-card1">
+                    <div class="body7-card1-heading">Win a Google Assistant Tshirt and $200 in Google Cloud Credits</div>
+                    <div class="body7-card1-subheading">Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less than 30min</div>
+                </div>
+                <div class="body7-card1">
+                    <div class="body7-card1-heading">Why React Is Best</div>
+                    <div class="body7-card1-subheading">React is the Javascript library for building interface .It is the maintained by Facebook and a community of individuals development and companies
+            </div>
+            </div>
+            </div>
+            <div class="body7-heading2">TALKS</div>
+            <div class="body7-heading3">I LOVE TO SHARE MY LIMITED KNOWLEDGE AND CREATE A SPAEAKER BADGE</div>
+            <div class="body7-button">Build Actions For</div>
+            </div>
+        </div>
+        <div class="container8">
+            <div class="body8">
+                <div class="body8-left-side">
+                <div class="body8-heading">Tweets by <a href="">@YouTube</a></div>
+                <div class="body8-heading2">
+                    <div class="body8-heading2-img">
+                       
+                        <img src="https://www.freeiconspng.com/uploads/logo-youtube-png-clipart-11.png" width="40px" height="40px"/>
+                        <h2>You Tube</h2>
+                    </div>
+
+                </div>
+                <div class="body8-main-heading">
+                    Because <a href="#">sweetsofmyown's</a> unicorn is even cuter when it's in miniature -> <a href="#">yt.be/6vFB</a>
+                </div>
+                <button class="body8-button"></button>
+            </div>
+        </div>
+        <div class="body8-right-side">
+            <button class="body8-right-button"></button>
+        </div>
+        </div>
+        <div class="container9">
+            <div class="body9">
+                <div class="body9-heading">Podcast</div>
+                <div class="body9-sub-heading">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </div>
+                <div class="body9-button">
+                    <div class="button9-left-side">
+                        <iframe src="https://www.youtube.com/embed/=rH8yPFq0Xpo" width="70px" height="70px"></iframe>
+                    </div>
+                    <div class="button9-right-side">
+                        The best video on Google-code-in
+                    </div>
+                </div>
+                </div>  
+            </div>
+        
+        <div class="container10">
+            <div class="body10">
+                <div class="body10-text">
+                    <div class="body10-heading1">
+                        Reach Out To me
+                    </div>
+                    <div class="body10-heading2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </div>
+                    <div class="body10-heading3">
+                        "First Pakistani Google Code-In-Finalist |Software Developer
+                        |Open Source Contributor |Speaker|Tech Writer"
+                    </div>
+                    <div class="body10-heading4">@Karachi,Pakistan</div>
+                    <div class="body10-heading5">Open For opportunities.Yes</div>
+
+                    <div class="body10-logo">
+                        <div class="body10-logo1">
+                            <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" width="50px" height="50px"/>
+                        </div>
+                        <div class="body10-logo1">
+                            <img
+                            src="https://www.freeiconspng.com/uploads/linkedin-icon-png-transparent-images--pictures--becuo-4.png" width="50px" height="50px"/>
+                        </div>
+                        <div class="body10-logo1">
+                            <img
+                            src="https://keystoliteracy.com/wp-content/uploads/2020/01/twitter-logo-transparent-15.png" width="50px" height="50px"/>
+                        </div>
+                    <div class="body10-logo1">
+                            <img
+                            src="https://th.bing.com/th/id/R.2b6475a64f3b53207b33ac3c5679aa4b?rik=7Da9QXxyPl72ZQ&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2ftransparent-youtube-icon%2ftransparent-youtube-icon-13.png&ehk=zmcdFCNsCUWVNWIDdkL2Hgn7jocwvdaU8CXqVv96NJw%3d&risl=&pid=ImgRaw&r=0"width="50px" height="50px"/>
+                        </div>
+                        <div class="body10-logo1">
+                            <img
+                            src="https://th.bing.com/th/id/R.3568c9dc79892a2d13d5f5a774519748?rik=QhyGvwTlIUmL1A&riu=http%3a%2f%2fpngimg.com%2fuploads%2fsnapchat%2fsnapchat_PNG15.png&ehk=lw8%2fY%2bkvv5IBXbav4ZJn4coPilJiRuZ7t7sFYlAM%2f5E%3d&risl=&pid=ImgRaw&r=0"width="50px" height="50px"/>
+                        
+                        </div> 
+                    </div>
+                </div>
+                <div class="body10-img">
+                    <img src="https://th.bing.com/th/id/OIP.F386iHZlXD4wb-9JXL7j8gAAAA?rs=1&pid=ImgDetMain" width="260px" height="260px"/>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
